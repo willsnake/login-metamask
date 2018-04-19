@@ -31,7 +31,6 @@ class Login extends Component {
       // with provider given by window.web3
       web3 = new Web3(window.web3.currentProvider);
     }
-    console.log('web3.eth', web3.eth);
     if (!web3.eth.coinbase) {
       window.alert('Please activate MetaMask first.');
       return;
